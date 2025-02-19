@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h3 id="titleText" style="color:green ;">University</h3>
+    <button onclick="handleTryMeClicked()">Try Me</button>
+
+    <fieldset style="margin-top: 20px;">
+        <legend>Log in</legend>
+        <br>
+
+        <form onsubmit="handleLogin(event)">
+            <label for="username">Username</label>
+            <input name="username" placeholder="Enter your username" type="text"> <br> <br>
+            <label for="password">Password</label>
+            <input name="password" placeholder="Enter your Password" type="text">
+
+            <div style="color:gray">
+                <p style="color:red" id="alertText"></p>
+            </div>
+            <br>
+            <input type="submit" value="Save">
+        </form>
+
+    </fieldset>
+
+
+<br> <br> 
+
+
+    <fieldset>
+        <legend>Registration</legend>
+
+        <form onsubmit="handleRegi(event)" >
+           
+            <div style="display: flex; align-items:center;gap:5px">
+                <div>
+                    <label for="firstName">First Name</label>
+                    <input type="text" name="firstName">
+                </div>
+                <p id="firstNameAlert" style="color:red"></p>
+            </div>
+            
+            <br> <br>
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName"> <br> 
+
+            <div style="display: flex; align-items: center;">
+                <p style="margin-right: 10px ;">Gender</p>
+                <div>
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="male">Male</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="male">Female</label>
+                </div>
+            </div>
+            
+            <label for="dateOfBirth">Date Of Birth</label>
+            <input type="date" name="dateOfBirth" id="dateOfBirth"> <br> <br>
+
+            <div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <p style="color:red" id="emailAlert"></p>
+            </div>
+
+            <div style="display: flex;align-items: center;">
+                <p>Programming Language</p>
+                <div>
+                    <input type="checkbox" name="c" id="c">
+                    <label for="c">C</label>
+                    <input type="checkbox" name="java" id="java">
+                    <label for="c">Java</label>
+                    <input type="checkbox" name="python" id="python">
+                    <label for="c">Python</label>
+                    <input type="checkbox" name="c#" id="c#">
+                    <label for="c#">C#</label>
+                </div>
+            </div>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </fieldset>
+
+
+</body>
+</html>
+
+
